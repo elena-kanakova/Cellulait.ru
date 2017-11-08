@@ -38,12 +38,7 @@ $(function () {
         };        
     });
     
-    $(document).click(function(e) {
-      if ($(e.target).closest($('.main-nav')).length || $(e.target).closest('.mobile-nav-btn').length) return;
-      $('.main-nav').fadeOut();
-      $('.overlay').fadeOut();
-      e.stopPropagation();
-    });
+    
     
     if ($(window).width() <= 450 ) {
         $(('a[name=link]')).on('click', function() {
@@ -53,3 +48,4 @@ $(function () {
     };
     
 });
+

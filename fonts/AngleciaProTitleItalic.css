@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AngleciaProTitleItalic';
+    src: url('fonts/AngleciaProTitleItalic.eot');
+    src: url('fonts/AngleciaProTitleItalic.eot') format('embedded-opentype'),
+         url('fonts/AngleciaProTitleItalic.woff2') format('woff2'),
+         url('fonts/AngleciaProTitleItalic.woff') format('woff'),
+         url('fonts/AngleciaProTitleItalic.ttf') format('truetype'),
+         url('fonts/AngleciaProTitleItalic.svg#AngleciaProTitleItalic') format('svg');
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AngleciaProTitleRegular';
+    src: url('fonts/AngleciaProTitleRegular.eot');
+    src: url('fonts/AngleciaProTitleRegular.eot') format('embedded-opentype'),
+         url('fonts/AngleciaProTitleRegular.woff2') format('woff2'),
+         url('fonts/AngleciaProTitleRegular.woff') format('woff'),
+         url('fonts/AngleciaProTitleRegular.ttf') format('truetype'),
+         url('fonts/AngleciaProTitleRegular.svg#AngleciaProTitleRegular') format('svg');
+}

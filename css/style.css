@@ -348,33 +348,33 @@ a, a:hover {
 }
 /* Слайдер */
 .slider-content {
+    position: relative;
     width: 794px;
-}
-.slide.active {
-    display: block
 }
 .slider {
     margin: 0 auto;
     width: 100%;
 }
-.slide {
-    display: none;
+.slide {    
     width: 100%;
     position: relative;
 }
 .slide img {
     height: 550px;
+    width: auto !important;
 }
 .btn-slide {
     position: relative;
     right: 185px;
     bottom: 49px;
+    cursor: pointer;
 }
 .btn-slide-1-desc, .btn-slide-2-desc, .btn-slide-3-desc {
     position: absolute;
 }
 .btn-slide-1, .btn-slide-2, .btn-slide-3 {
     position: absolute;
+    z-index: 2;
     width: 31px;
     height: 31px;
     background-color: white;
@@ -415,12 +415,10 @@ a, a:hover {
 .btn-slide-2-desc {
     right: 80px;
     bottom: 235px;
-    display: none;
 }
 .btn-slide-3-desc {
     right: 0;
     bottom: 150px;
-    display: none;
 }
 .btn-slide-1-desc::before, .btn-slide-2-desc::before {
     margin: 21px 0 0 -13px;
@@ -1019,6 +1017,10 @@ a, a:hover {
 }
 .screen-8-slider-wrap {
     position: relative;
+    width: 100%;
+}
+.screen-8-slider {
+    width: 100%;
     padding: 66px 175px 66px 175px;
     justify-content: space-between;
 }
@@ -1217,6 +1219,8 @@ a, a:hover {
 	background:0 0 / 100% 100% no-repeat;
 }
 .border[data-type="1"].line{
+    position: relative;
+    z-index: 2;
 	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" preserveAspectRatio="none"><path d="m0,0 a20,35,0,0,0,30,0 a0,80,0,0,0,0,20 a0,0,0,0,0,-30,0 z" fill="rgb(255,255,255)"/></svg>');
 }
 /* Разделитель между экранами */
@@ -1342,6 +1346,8 @@ a, a:hover {
 }
 /* Кнопки слайдера */
 .upper-slider-control {
+    position: relative;
+    z-index: 20;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -1351,13 +1357,15 @@ a, a:hover {
     width: 100%;
 }
 .slide.active {
-    display: block;
     padding-top: 50px;
     flex-direction: column;
 }
+.slide-img {
+    padding-top: 70px;
+}
 .slide img {
     height: auto;
-    width: 100%;
+    width: 100% !important;
 }
 .btn-slide-1, .btn-slide-2, .btn-slide-3 {
     display: none;
@@ -1371,12 +1379,6 @@ a, a:hover {
     top: 20px;
     left: auto;
     width: 100%;
-}
-.btn-slide-2-desc {
-    display: none;
-}
-.btn-slide-3-desc {
-    display: none;
 }
 .btn-slide-3-desc br {
     display: none;
@@ -1584,7 +1586,7 @@ a, a:hover {
 .screen-8 .screen-h2 h2 {
     padding: 30px 0 22px 0;
 }
-.screen-8-slider-wrap {
+.screen-8-slider {
     padding: 66px 0 66px 0;
     justify-content: center;
 }
